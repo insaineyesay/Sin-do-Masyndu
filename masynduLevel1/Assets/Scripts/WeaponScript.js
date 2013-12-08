@@ -1,9 +1,12 @@
 ﻿#pragma strict
 
-var shotPrefab : Transform;
-var shootingRate : float = .25;
+// Designer Variables 
+var shotPrefab : Transform; // Projectile Prefab for shooting
+var shootingRate : float = .25; // Cooldown in seconds between 2 shots
 
 private var shootCooldown : float;
+
+// CoolDown
 
 function Start () {
 	shootCooldown = 0;
@@ -15,9 +18,11 @@ function Update () {
 		shootCooldown -= Time.deltaTime;
 		}
 	}
+	
+// Shooting from other scripts (Enemies etc)
 		
-var Attack = function (isEnemy: boolean) {
-	if (CanAttack) {
+function Attack (isEnemy: boolean) {
+	if (CanAttack ) {
 		shootCooldown = shootingRate;
 		
 		// Create a new shot
@@ -27,7 +32,7 @@ var Attack = function (isEnemy: boolean) {
 		shotTransform.position = transform.position;
 		
 		// The isEnemy Property
-		var shot = shotTransform.gameObject.GetComponent(ShotScript);
+		var shot : ShotScript = shotTransform.gameObject.GetComponent(ShotScript);
 			if (shot != null) 
 			{
 				shot.isEnemyShot = isEnemy;
@@ -43,5 +48,5 @@ var Attack = function (isEnemy: boolean) {
 		};
 		
 var CanAttack = function () {
-	return shootCooldown <= 0;			
+	return shootCooldown <= 0;
 };
