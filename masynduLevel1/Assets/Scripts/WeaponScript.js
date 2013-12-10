@@ -22,7 +22,7 @@ function Update () {
 // Shooting from other scripts (Enemies etc)
 		
 function Attack (isEnemy: boolean) {
-	if (CanAttack ) {
+	if (CanAttack () ) {
 		shootCooldown = shootingRate;
 		
 		// Create a new shot
@@ -46,7 +46,7 @@ function Attack (isEnemy: boolean) {
 				}
 			}
 		};
-		
-var CanAttack = function () {
+
+function CanAttack () {
 	return shootCooldown <= 0;
-};
+}
