@@ -19,7 +19,7 @@ function Start () {
 		collider2D.enabled = false;
 		
 		// -- moving
-		moveScript.enabled = false;
+		// moveScript.enabled = false;
 		
 		// -- Shooting
 		for (var weapon : WeaponScript in weapons) {
@@ -37,30 +37,16 @@ function Update () {
 					Spawn();
 				}
 				
-		} else {
-			// Auto-fire 
-	for(var weapon : WeaponScript in weapons) {
-		// Auto Fire
-	if (weapon != null && weapon.enabled && weapon.CanAttack) {
-		weapon.Attack(true);
 		}
-	}
-	
-	// Out of the camera ? Destory the game object
-	if (renderer.isVisible == false)
-		{
-			Destroy(gameObject);
-		}
-	}
 }
 
-private function Spawn() {
+function Spawn() {
 	hasSpawn = true;
 	
 	// Enable Everything
 	collider2D.enabled = true;
 	
-	moveScript.enabled = true;
+	// moveScript.enabled = true;
 	
 	for (var weapon : WeaponScript in weapons)
 	{	

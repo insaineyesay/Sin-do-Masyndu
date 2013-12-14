@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: enemy 1
   m_TagString: Untagged
@@ -177,6 +178,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 400000, guid: 8257ca0d6b1b74dafa3b156c60d1ad44, type: 2}
   shootingRate: .5
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c3a55103e442f4c975683c3d17b753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisibleSpec:
+    eventEnabled: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseOverSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collisionSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnterSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExitSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collision2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnter2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExit2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  onClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  listener: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

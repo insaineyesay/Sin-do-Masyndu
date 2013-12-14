@@ -1,0 +1,215 @@
+KILLER WAVES PLUGIN - By Dark Tonic, Inc. (c) 2012-2013
+
+-Code by Brian Hunsaker
+
+
+-V 2.7.7 - Added 2D collider and 2D trigger support to Triggered Despawner script.
+
+	 - Added support for 2d collisions and Triggers to Triggered Spawners.
+	 - Added nicer error if LevelSettings not in Scene.
+	 - Added "Use Global Waves" checkbox in LevelSettings. You can turn this off if you don't need Syncro Spawners and then you don't have to create long fake waves so that Triggered Spawners don't shut off after your Global Waves end. There was always the Game Over Behavior which could get around this, but that's not necessary any longer.
+
+-V 2.7.6 - Added 2D collider and 2D trigger support to Killable! Tt "just works". No extra settings.
+	 - Added full Undo support for Unity 4.3. Unity 3.5.7 users can still use the package, just no undo.
+
+-V 2.7.5 - Moved PlayerSpawner code into Start instead of Awake so it would work with Pool Manager.
+		 
+	 - Added KillableChildCollision class (similar to KillableChildVisibility) to trigger the parent's collision events from child prefabs.
+		 
+	 - Added arrows to syncro spawners to re-order waves visually.
+
+
+
+-V 2.7.4 - Made WebPlayer mode conditionally omit the Cached Player Prefs part at compile-time because it didn't work.
+
+
+-V 2.7.3 - Added multiple "scenarios" (sets) of World Variable Modifiers. The "Destroyed" scenario is the default. If you want to use other scenarios, you can specify the scenario name in the Playmaker Killable Destroy Custom Action, call the DestroyKillable method yourself from code, or make a subclass of the Killable class and override the DestroyKillable method to change the scenario name parameter based on your own logic.
+	 - Added Killable Despawn and Killable Destroy, Playmaker Custom Actions.
+	 - Added DestroyingKillable event to Killable Listener. You can take action before the Killable is destroyed.
+	 
+	 - Added DeterminingScenario event to Killable Listener, so you can add logic to use a different Scenario (set of World Variable modifiers).
+	 - Made Inspector classes work for subclasses of Killable, Triggered Spawner, Syncro Spawner, Triggered Despawner (only works in Unity 4).
+
+	 - Fixed bug where elimination waves would always have 15 repetitions or more regardless of what you specified.
+
+-V 2.7.2 - Added setting to "use music" or not. Switch this off if you don't want Killer Waves to require WaveMusicChanger script.
+
+	 - Changed warnings to appear underneath for W.V. Ranges so you can actually continue typing when they show up.
+	 - Added spawn limit and time limit to to repeat sections of both spawner types. This way you can increase the # of items and time but not pass the limits.
+
+-V 2.7.1 - Now showing current world variable values during runtime in Inspector.
+	 - To be consistent, changed "Active item mode" and "Active spawner mode" both to "Active mode" in Inspectors. 
+	 - Fixed bug where music volume didn't work. 
+	 - Fixed bug where switching a previously "number of repetitions" waves didn't repeat enough times when switched to Timed waves.
+	 - Added Wave Repeat spawn increase and time increase fields to progressively modify all repeated waves on Triggered Spawners.
+	 - Add non-elimination repeat options to timed spawner waves with "Timed Repeat Mode". Kept old "elimination type" as well.
+
+-V 2.7   - Added KillableChildVisibility script for cases when your renderer is in a child object of Killable. That way we can get the visible and invisible events to work properly still.
+	 - Added "Log Events" checkbox in Killable Inspector so you can find out why collisions aren't registering when it happens.
+	 - Added Active Mode dropdown for Triggered Spawners. Choices are Always, Never, "World Variable in range" and "World Variable outside range".
+	 - Removed "Active" checkbox for Syncro Spawners. Replaced it with Active Mode dropdown the same as Triggered Spawners got above.
+	 - Added Wave name to Inspector. For display and identification purposes.
+	 - Added display of Spawner count using each wave in Level Settings Inspector.
+	 - Added "Wave Ended" event to Level Settings Listener.
+	 
+	 - Added Wave Completion Bonuses section so you can add to Score or any other World Variable when a wave is completed normally.
+
+
+-V 2.6.9 - Added Skip Wave Type to Waves in Level Settings. You can choose None, Always, IfWorldVariableValueAbove or IfWorldVariableValueBelow and add WorldVariable conditions to skip the wave.
+		 	 - Added Wave Skipped event in LevelSettingsListener.
+	 - Removed "Active" checkbox on Prefab Pool Items. Added Active Item Mode instead. Choices are Always (default), Never, IfWorldVariableInsideRange & IfWorldVariableOutsideRange. This lets you control which items are in the Prefab Pool based on XP, Score, etc. They are re-evaluated each time the Prefab Pool re-fills.
+	 - Added Custom Start Wave setting in Level Settings so you can start playing on the level and wave you select. You can toggle this on and off. Great for testing higher waves!
+
+	 
+		 
+-V 2.6.8 - Removed "exhaustive list" checkbox for Prefab Pools when non-random. Only applies to random.
+	
+	 - Added up and down arrows for Prefab Pool items, for organizational purposes.
+
+
+-V 2.6.7 - Fixed up Owner properties of Playmaker custom actions. They had bad code.
+
+	 - Added PauseWave and UnpauseWave methods to LevelSettings. Added Playmaker custom actions for these as well.
+	 - Added Pause Wave Behavior for all spawners, so you can selectively choose to ignore the wave pause setting if you want.
+	 - Fixed bug where Death Prefab of Killable would use the same prefab in Prefab Pool instead of picking a new one each time.
+	 - Added the ability to specify a "no prefab" item in Prefab Pools, to enable "spawn nothing" moments in spawners.
+
+-V 2.6.6 - Exposed "TakeDamage" method in Killable.
+	 - Added Playmaker Custom Action to force the current Wave to end.
+ 	 - Modified Playmaker Custom Action "KillableAttackOrHitPointsChange" to add to Current Hit Points as well so it can kill the Killable.
+	 - Added Playmaker Custom Action "KillableTakeDamage" to inflict damage on a Killable.
+	 - Added Player Spawner script. Handles spawning, respawning, and an optional spawn particle automatically.
+
+-V 2.6.5 - Added Repeat Mode to syncro & triggered spawners (number of repetitions and endless are the choices).
+	 - Added Repeat Mode "Until World Variable Above" and "Until World Variable Below" to both spawner types. Both allow infinite wave repetition until 1 or more World Variables reach target values you set in the Inspector.
+
+
+
+
+-V 2.6.4 - Added Killable despawn mode "None" so your prefab won't die automatically at zero hit points. You can manually kill or it whatever you want to do now.
+		 
+	 - Made Killable hit points not able to go below zero.
+		 
+	 - Added "current hit points" to the Killable Inspector so you can see and manipulate the current HP.
+
+
+-V 2.6.3 - Redid the way Prefab Pools are referenced due to a Unity 4 bug that won't "remember them" after you apply changes to a prefab. Unity 3.X worked fine.
+		
+	 - Fixed Inspector bug where it would forget new waves you create when you pressed Play in the editor.
+
+-V 2.6.2 - Added Time remaining in current wave property, which transmits to the LevelSettingsListener every time the number changes (seconds).
+	 - Added "remaining active spawned items in wave" for repeat and elimination waves. It transmits to LevelSettingsListener every time the number changes.
+	 - Renamed trigger event to Trigger Enter
+	 - Added "Trigger Exit" event for Triggered Despawners and Triggered Spawners
+	 - Added a KillableListener subclass example script to Example Scene 1. It's on the Main Camera, listening to the Player prefab's Killable script.
+	 - Added a "spawn one" Playmaker custom action for Syncro Spawners. It will spawn one regardless of speed settings as long as its during a wave the spawner has settings for.
+	 - Added a "Killer Waves Despawn" custom action.
+	 - Fixed bug in first 2 Playmaker actions for "Owner" variable.
+
+
+-V 2.6.1 - Added ability to specify 0 attack points for Killable (for pickup non-damage items like coins).
+
+-V 2.6  - Added Playmaker custom actions:
+	1) Killable Change Attack Or Hit Points
+	2) World Variable Change Value
+
+-V 2.5  - Added PlayerPrefs caching system to massively instease WorldVariable performance on mobile devices.
+	- Added NGUI_KillerWaves package inside the main package for NGUI users.
+
+-V 2.4  - Added random distance to the spawn distance limiter. Now you can specify a min distance that a random range of 30-50 instead of a fixed distance. 
+	   
+	- Added extra settings to the repeat wave section. Now you can make the wave larger (or smaller) with each repeat. You can also make each wave "time to spawn all" shorter or longer.
+
+
+
+-V 2.3  - Added limitations for random angle, to enable Fruit Ninja fruit spawning
+	
+	- Added "EndWave" method for LevelSettings, to enable countdown abort for tower defense games.
+
+
+
+-V 2.2  - Performance fixes for elimination wave completion checking. Now event-based so it scales MUCH better.
+
+
+
+-V 2.1.1 - Fixed bug for "not visible for time" mode on Killable.
+	
+	- Fixed bug for warning when having no music during waves.
+	
+	- Fixed VS-unfriendly yield returns.
+
+
+
+-V 2.1 - Killable Death Prefab now can pull from Prefab Pools.
+	
+	- Killable now has Damage prefab. Spawn something when taking damage or x of the prefab for every Y hit points lost.
+	
+	- Random rotation checkboxes for damage prefab. 
+	
+	- Added minimum distance limiter for syncro spawners. All spawned items must be min distance away from spawner before another will be spawned.
+
+
+
+-V 2.0  - Added OnEnable / OnDisable events
+	
+	- Added "Despawn this" on some events for Triggered Spawners.
+	
+	- Added 2 Code-triggered Event types for Triggered Spawners.
+	
+	- Added retrigger limiters to Triggered Spawners so you can't repeat-trigger a wave continually. You can specify frames or time.
+	
+	- Added Killable script to easily allow multiple-hit targets, auto-despawning, explosions, prefab replacement and more!
+	
+	- Added OnClick event for NGUI to Triggered Spawners and Triggered Despawners.
+	
+	- Added minimal mode to triggered spawners to improve the increasingly busy UI.
+	
+	- Added "World variables" like health, score, etc that Killables can affect when destroyed. Stats are customizable by the user and carryable (or not) from scene to scene.
+	
+	- Added World Variable listeners you can hook into NGUI or whatever you like.
+	
+	- Added "game over behavior" to allow spawners and killables to shut off at game over (or not).
+	
+	- Added Child spawners (it's a settings of triggered spawners), which can be called by parent spawner. Choice to propogate events to children, any number of levels deep.
+	
+	- Added 9 listener classes for Syncro Spawners, Triggered Spawners & Despawners, Level Settings, Killable, and more classes, so you can hook up custom code when things happen like wave start, wave end, item spawned etc. Each listener can be subclassed for your particular needs.
+
+
+
+-V 1.4.1 - Added "spawn order" dropdown modes for prefab pools. Can be random (as originally designed, or original pool order).
+
+
+
+-V 1.4  - Added "is enabled" checkbox for spawners (can also be changed through scripts)
+	
+	- Added "Game Over Music" section at top of Level Settings. Your existing music settings will probably be lost, please check them after updating to this version.
+	
+	- Added "Music Fade Time" for Silence music mode to fade previous music out over time.
+	- Fixed bug where the same prefab would be spawned for each item in the same frame, even in a prefab pool.
+	
+	- Added new triggered spawner script to trigger waves from any prefab during collision, trigger, becameVisible, becameInvisible, spawn, despawn, mouse click and more.
+	- Added ParticleDespawner
+	
+	- Add repeat wave time to triggered spawners, for projectile waves, etc.
+	
+	- Added Triggered Despawner script
+	
+	- Added Timed Despawner script
+
+-V 1.3  
+	- Added Incremental Settings to create "space invaders" type waves with spacing or rotation.
+	
+	- Now allowing elimination waves to repeat, and Added new field "# of repetitions" for elimination waves.
+	
+	- Fixed "down arrow" bug in inspectors.
+	
+	- Added Prefab Pools for random weighted spawn types.
+	
+	- Spawner script changed so that multiple items can be spawners per frame if "time to spawn entire wave" is very small.
+	
+	- Added Post-Spawn Nudge settings so you can create rings of enemies and other cool patterns.
+	
+	- Enabled 0 Time to spawn whole wave, which means the entire wave will spawn in one frame.
+
+
+-V 1.2 - Released 1/31/2013 on the Asset Store

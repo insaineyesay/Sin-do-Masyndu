@@ -13,7 +13,8 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: enemy2b
   m_TagString: Untagged
@@ -44,8 +45,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.3994026, y: -2.83950686, z: 0}
-  m_LocalScale: {x: -.400000006, y: .400000006, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -112,17 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: {x: -1, y: 0}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d73c6b291b66548d5a02218c2daa4d73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,6 +126,1060 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 400000, guid: 8257ca0d6b1b74dafa3b156c60d1ad44, type: 2}
   shootingRate: .75
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c3a55103e442f4c975683c3d17b753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisibleSpec:
+    eventEnabled: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseOverSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collisionSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnterSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExitSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collision2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnter2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExit2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  onClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  listener: {fileID: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e470fb4bbb4f34b40a362b16f25917a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeMode: 0
+  activeItemCriteria:
+    statMods: []
+  hideUnusedEvents: 1
+  gameOverBehavior: 1
+  wavePauseBehavior: 1
+  eventSourceType: 1
+  transmitEventsToChildren: 1
+  listener: {fileID: 0}
+  enableWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  disableWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  visibleWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  invisibleWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  mouseOverWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  mouseClickWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  collisionWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  triggerEnterWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  triggerExitWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  spawnedWave:
+    isExpanded: 1
+    enableWave: 1
+    NumberToSpawn: 11
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 2.5
+    prefabToSpawn: {fileID: 400000, guid: 8257ca0d6b1b74dafa3b156c60d1ad44, type: 2}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: .100000001
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  despawnedWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  codeTriggeredWave1:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  codeTriggeredWave2:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  clickWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  collision2dWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  triggerEnter2dWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
+  triggerExit2dWave:
+    isExpanded: 1
+    enableWave: 0
+    NumberToSpawn: 1
+    WaveDelaySeconds: 0
+    TimeToSpawnWholeWave: 0
+    prefabToSpawn: {fileID: 0}
+    spawnSource: 0
+    prefabPoolIndex: 0
+    prefabPoolName: 
+    enableRepeatWave: 0
+    curWaveRepeatMode: 1
+    repeatWavePauseTime: -1
+    maxRepeats: 2
+    repeatItemIncrease: 0
+    repeatItemLimit: 100
+    repeatTimeIncrease: 0
+    repeatTimeLimit: 100
+    repeatPassCriteria:
+      scenarioName: CONDITION_NAME
+      statMods: []
+    willDespawnOnEvent: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+    enableRandomizations: 0
+    randomXRotation: 0
+    randomYRotation: 0
+    randomZRotation: 0
+    randomDistanceX: 0
+    randomDistanceY: 0
+    randomDistanceZ: 0
+    randomXRotationMin: 0
+    randomXRotationMax: 360
+    randomYRotationMin: 0
+    randomYRotationMax: 360
+    randomZRotationMin: 0
+    randomZRotationMax: 360
+    enableIncrements: 0
+    incrementPosX: 0
+    incrementPosY: 0
+    incrementPosZ: 0
+    incrementRotationX: 0
+    incrementRotationY: 0
+    incrementRotationZ: 0
+    enablePostSpawnNudge: 0
+    postSpawnNudgeForward: 0
+    postSpawnNudgeRight: 0
+    postSpawnNudgeDown: 0
+    retriggerLimitMode: 0
+    limitPerXFrames: 1
+    limitPerXSeconds: .100000001
+    triggeredLastFrame: -200
+    triggeredLastTime: -100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
