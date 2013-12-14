@@ -11,10 +11,10 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: enemy2b
   m_TagString: Untagged
@@ -46,7 +46,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -87,19 +87,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 4, y: 4}
   m_Center: {x: 0, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03f76d7980fd64f778e71ac7f59dd45a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 1
-  isEnemy: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,6 +100,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: {x: -1, y: 0}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204c52b1bd219bc4d981667d797f5983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverBehavior: 0
+  HitPoints: 10
+  AttackPoints: 1
+  ExplosionPrefab: {fileID: 400002, guid: 4d9016e9c64e848f0becf25499acbcd3, type: 2}
+  listener: {fileID: 0}
+  enableLogging: 1
+  filtersExpanded: 1
+  useLayerFilter: 0
+  useTagFilter: 1
+  showVisibilitySettings: 1
+  despawnWhenOffscreen: 0
+  despawnOnClick: 0
+  despawnIfNotVisible: 0
+  despawnIfNotVisibleForTime: 5
+  ignoreOffscreenHits: 1
+  matchingTags:
+  - Bullet
+  matchingLayers: 00000000
+  despawnMode: 0
+  despawnStatModifiersExpanded: 1
+  playerStatDespawnModifiers:
+    scenarioName: CONDITION_NAME
+    statMods:
+    - statName: Experience Points
+      modValue: 1
+    - statName: Score
+      modValue: 100
+  alternateModifiers: []
+  damagePrefabExpanded: 1
+  damagePrefabSource: 1
+  damagePrefabPoolIndex: 0
+  damagePrefabPoolName: 
+  damagePrefabSpecific: {fileID: 400000, guid: 62452e0f27d974f9e96597de2ed48352, type: 2}
+  damagePrefabSpawnMode: 1
+  damagePrefabSpawnQty: 1
+  damageGroupSize: 1
+  damagePrefabRandomizeXRotation: 1
+  damagePrefabRandomizeYRotation: 0
+  damagePrefabRandomizeZRotation: 0
+  deathPrefabSource: 0
+  deathPrefabPoolIndex: 0
+  deathPrefabPoolName: 
+  deathPrefabSettingsExpanded: 0
+  deathPrefabSpecific: {fileID: 0}
+  deathPrefabSpawnPercentage: 100
+  deathPrefabQuantity: 1
+  rotationMode: 2
+  deathPrefabKeepVelocity: 1
+  deathPrefabCustomRotation: {x: 0, y: 0, z: 0}
+  retriggerLimitMode: 0
+  limitPerXFrames: 1
+  limitPerXSeconds: .100000001
+  triggeredLastFrame: -200
+  triggeredLastTime: -100
+  currentHitPoints: 0
+  isVisible: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +217,7 @@ MonoBehaviour:
     useLayerFilter: 0
     useTagFilter: 0
     matchingTags:
-    - Untagged
+    - Bullet
     matchingLayers: 00000000
   triggerEnterSpec:
     eventEnabled: 0
@@ -184,7 +238,7 @@ MonoBehaviour:
     useLayerFilter: 0
     useTagFilter: 0
     matchingTags:
-    - Untagged
+    - Bullet
     matchingLayers: 00000000
   triggerEnter2dSpec:
     eventEnabled: 0
@@ -1201,7 +1255,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 3757687d37f7d4c5e895fe56f03cbc84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac31122c64e1a46be8e9bb8f45e01017, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

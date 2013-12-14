@@ -13,9 +13,11 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400006}
+  m_Layer: 9
   m_Name: shot
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.1957207, y: -.707672179, z: 0}
-  m_LocalScale: {x: .75, y: .75, z: 1}
+  m_LocalScale: {x: .5, y: .5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -68,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a2f6f280fb8433aa0945f9640f1fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 10, y: 10}
+  speed: {x: 111.800003, y: 0}
   direction: {x: -1, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -83,6 +85,151 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   isEnemyShot: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c3a55103e442f4c975683c3d17b753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisibleSpec:
+    eventEnabled: 1
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseOverSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  mouseClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collisionSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnterSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExitSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  collision2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerEnter2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  triggerExit2dSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  onClickSpec:
+    eventEnabled: 0
+    useLayerFilter: 0
+    useTagFilter: 0
+    matchingTags:
+    - Untagged
+    matchingLayers: 00000000
+  listener: {fileID: 0}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204c52b1bd219bc4d981667d797f5983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverBehavior: 1
+  HitPoints: 1
+  AttackPoints: 1
+  ExplosionPrefab: {fileID: 0}
+  listener: {fileID: 0}
+  enableLogging: 0
+  filtersExpanded: 1
+  useLayerFilter: 1
+  useTagFilter: 0
+  showVisibilitySettings: 1
+  despawnWhenOffscreen: 0
+  despawnOnClick: 0
+  despawnIfNotVisible: 0
+  despawnIfNotVisibleForTime: 5
+  ignoreOffscreenHits: 1
+  matchingTags:
+  - Untagged
+  matchingLayers: 0a000000
+  despawnMode: 0
+  despawnStatModifiersExpanded: 0
+  playerStatDespawnModifiers:
+    scenarioName: CONDITION_NAME
+    statMods: []
+  alternateModifiers: []
+  damagePrefabExpanded: 0
+  damagePrefabSource: 0
+  damagePrefabPoolIndex: 0
+  damagePrefabPoolName: 
+  damagePrefabSpecific: {fileID: 0}
+  damagePrefabSpawnMode: 0
+  damagePrefabSpawnQty: 1
+  damageGroupSize: 1
+  damagePrefabRandomizeXRotation: 0
+  damagePrefabRandomizeYRotation: 0
+  damagePrefabRandomizeZRotation: 0
+  deathPrefabSource: 0
+  deathPrefabPoolIndex: 0
+  deathPrefabPoolName: 
+  deathPrefabSettingsExpanded: 0
+  deathPrefabSpecific: {fileID: 0}
+  deathPrefabSpawnPercentage: 100
+  deathPrefabQuantity: 1
+  rotationMode: 2
+  deathPrefabKeepVelocity: 1
+  deathPrefabCustomRotation: {x: 0, y: 0, z: 0}
+  retriggerLimitMode: 0
+  limitPerXFrames: 1
+  limitPerXSeconds: .100000001
+  triggeredLastFrame: -200
+  triggeredLastTime: -100
+  currentHitPoints: 0
+  isVisible: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -104,7 +251,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 9a54d452886c545a69742d1134dcf533, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b1a0f9bf4ba543b59f4d5011eedfc84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
