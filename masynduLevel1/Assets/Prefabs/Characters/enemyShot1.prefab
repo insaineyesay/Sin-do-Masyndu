@@ -10,12 +10,13 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  - 58: {fileID: 5800000}
+  - 114: {fileID: 11400004}
+  m_Layer: 10
   m_Name: enemyShot1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.93000007, y: .123636067, z: 0}
+  m_LocalPosition: {x: 13.8970985, y: -2.09864473, z: 0}
   m_LocalScale: {x: .349999994, y: .349999994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,16 +47,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_IsTrigger: 0
+  m_Radius: .75999999
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -83,6 +84,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   isEnemyShot: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204c52b1bd219bc4d981667d797f5983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverBehavior: 1
+  HitPoints: 1
+  AttackPoints: 1
+  ExplosionPrefab: {fileID: 0}
+  listener: {fileID: 0}
+  enableLogging: 1
+  filtersExpanded: 1
+  useLayerFilter: 1
+  useTagFilter: 0
+  showVisibilitySettings: 0
+  despawnWhenOffscreen: 1
+  despawnOnClick: 0
+  despawnIfNotVisible: 1
+  despawnIfNotVisibleForTime: 5
+  ignoreOffscreenHits: 1
+  matchingTags:
+  - Untagged
+  matchingLayers: 09000000
+  despawnMode: 2
+  despawnStatModifiersExpanded: 1
+  playerStatDespawnModifiers:
+    scenarioName: CONDITION_NAME
+    statMods:
+    - statName: Health
+      modValue: 1
+  alternateModifiers: []
+  damagePrefabExpanded: 1
+  damagePrefabSource: 0
+  damagePrefabPoolIndex: 0
+  damagePrefabPoolName: 
+  damagePrefabSpecific: {fileID: 0}
+  damagePrefabSpawnMode: 0
+  damagePrefabSpawnQty: 1
+  damageGroupSize: 1
+  damagePrefabRandomizeXRotation: 0
+  damagePrefabRandomizeYRotation: 0
+  damagePrefabRandomizeZRotation: 0
+  deathPrefabSource: 0
+  deathPrefabPoolIndex: 0
+  deathPrefabPoolName: 
+  deathPrefabSettingsExpanded: 0
+  deathPrefabSpecific: {fileID: 0}
+  deathPrefabSpawnPercentage: 100
+  deathPrefabQuantity: 1
+  rotationMode: 2
+  deathPrefabKeepVelocity: 1
+  deathPrefabCustomRotation: {x: 0, y: 0, z: 0}
+  retriggerLimitMode: 0
+  limitPerXFrames: 1
+  limitPerXSeconds: .100000001
+  triggeredLastFrame: -200
+  triggeredLastTime: -100
+  currentHitPoints: 0
+  isVisible: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

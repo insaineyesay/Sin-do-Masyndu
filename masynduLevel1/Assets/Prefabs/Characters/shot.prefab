@@ -139,12 +139,12 @@ MonoBehaviour:
     - Untagged
     matchingLayers: 00000000
   collision2dSpec:
-    eventEnabled: 0
-    useLayerFilter: 0
+    eventEnabled: 1
+    useLayerFilter: 1
     useTagFilter: 0
     matchingTags:
     - Untagged
-    matchingLayers: 00000000
+    matchingLayers: 0a000000
   triggerEnter2dSpec:
     eventEnabled: 0
     useLayerFilter: 0

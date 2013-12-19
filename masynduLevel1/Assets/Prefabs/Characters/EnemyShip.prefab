@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400012}
   m_Layer: 10
   m_Name: ChildSpawnBayRight
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3181,6 +3182,69 @@ MonoBehaviour:
     limitPerXSeconds: .100000001
     triggeredLastFrame: -200
     triggeredLastTime: -100
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204c52b1bd219bc4d981667d797f5983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverBehavior: 1
+  HitPoints: 40
+  AttackPoints: 1
+  ExplosionPrefab: {fileID: 0}
+  listener: {fileID: 0}
+  enableLogging: 0
+  filtersExpanded: 1
+  useLayerFilter: 1
+  useTagFilter: 1
+  showVisibilitySettings: 1
+  despawnWhenOffscreen: 0
+  despawnOnClick: 0
+  despawnIfNotVisible: 0
+  despawnIfNotVisibleForTime: 5
+  ignoreOffscreenHits: 1
+  matchingTags:
+  - Bullet
+  matchingLayers: 09000000
+  despawnMode: 0
+  despawnStatModifiersExpanded: 0
+  playerStatDespawnModifiers:
+    scenarioName: CONDITION_NAME
+    statMods: []
+  alternateModifiers: []
+  damagePrefabExpanded: 0
+  damagePrefabSource: 0
+  damagePrefabPoolIndex: 0
+  damagePrefabPoolName: 
+  damagePrefabSpecific: {fileID: 0}
+  damagePrefabSpawnMode: 0
+  damagePrefabSpawnQty: 1
+  damageGroupSize: 1
+  damagePrefabRandomizeXRotation: 0
+  damagePrefabRandomizeYRotation: 0
+  damagePrefabRandomizeZRotation: 0
+  deathPrefabSource: 0
+  deathPrefabPoolIndex: 0
+  deathPrefabPoolName: 
+  deathPrefabSettingsExpanded: 0
+  deathPrefabSpecific: {fileID: 0}
+  deathPrefabSpawnPercentage: 100
+  deathPrefabQuantity: 1
+  rotationMode: 2
+  deathPrefabKeepVelocity: 1
+  deathPrefabCustomRotation: {x: 0, y: 0, z: 0}
+  retriggerLimitMode: 0
+  limitPerXFrames: 1
+  limitPerXSeconds: .100000001
+  triggeredLastFrame: -200
+  triggeredLastTime: -100
+  currentHitPoints: 0
+  isVisible: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

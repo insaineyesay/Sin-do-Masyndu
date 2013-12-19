@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400004}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: enemy2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400006}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: WeaponObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBehavior: 0
-  HitPoints: 10
+  HitPoints: 2
   AttackPoints: 1
   ExplosionPrefab: {fileID: 400002, guid: 4d9016e9c64e848f0becf25499acbcd3, type: 2}
   listener: {fileID: 0}
@@ -234,9 +234,9 @@ MonoBehaviour:
     - Untagged
     matchingLayers: 00000000
   collision2dSpec:
-    eventEnabled: 0
+    eventEnabled: 1
     useLayerFilter: 0
-    useTagFilter: 0
+    useTagFilter: 1
     matchingTags:
     - Bullet
     matchingLayers: 00000000

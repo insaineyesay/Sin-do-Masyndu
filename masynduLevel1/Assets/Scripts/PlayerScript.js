@@ -3,7 +3,7 @@
 var speed : Vector2 = new Vector2(50,50);
 
 function Update () {
-
+	
 	var shoot = Input.GetButton("Fire1") || Input.GetButton("Fire2");
 	
 	if (shoot)
