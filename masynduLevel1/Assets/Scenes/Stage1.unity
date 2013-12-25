@@ -117,15 +117,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useMusicSettings: 1
-  gameStatsExpanded: 1
+  gameStatsExpanded: 0
   listener: {fileID: 0}
   logoTexture: {fileID: 2800000, guid: ef6d667926efee84f9516c7edb836769, type: 3}
   RedSpawnerTrans: {fileID: 400000, guid: a55a4529e623189409cc61a63c6364f6, type: 2}
   GreenSpawnerTrans: {fileID: 400000, guid: e121bde1411b84240bc764138546b3b7, type: 2}
   PrefabPoolTrans: {fileID: 400000, guid: 9851599e1296c6a46a6bdd48b6ce09d4, type: 2}
-  newSpawnerName: EnemShipGuns
+  newSpawnerName: PlayerWeaponOrbiter
   newPrefabPoolName: Powerups
-  newSpawnerType: 1
+  newSpawnerType: 0
   gameOverMusicSettings:
     WaveMusicMode: 2
     WaveMusic: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
     FadeTime: 2
   levelsAreExpanded: 0
   createSpawnersExpanded: 1
-  createPrefabPoolsExpanded: 0
+  createPrefabPoolsExpanded: 1
   disableSyncroSpawners: 0
   enableWaveWarp: 0
   warpLevelNumber: 0
@@ -1259,19 +1259,64 @@ MonoBehaviour:
   triggeredLastTime: -100
   currentHitPoints: 0
   isVisible: 0
+--- !u!1001 &165823729
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 610874930}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: xStart
+      value: 590
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+      propertyPath: yStart
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+  m_RootGameObject: {fileID: 411473541}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &175010651
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 175010652}
   - 198: {fileID: 175010654}
   - 199: {fileID: 175010653}
-  - 50: {fileID: 175010658}
-  - 61: {fileID: 175010657}
-  - 114: {fileID: 175010656}
   - 212: {fileID: 175010655}
   m_Layer: 0
   m_Name: thrust
@@ -1284,7 +1329,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175010651}
   m_LocalRotation: {x: -.707106709, y: -1.15202326e-07, z: .707106829, w: -1.15202312e-07}
   m_LocalPosition: {x: -3.56594372, y: .496892452, z: 6.27186338e-08}
@@ -1296,7 +1341,7 @@ ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 19900000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175010651}
   m_Enabled: 1
   m_CastShadows: 1
@@ -1330,7 +1375,7 @@ ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 19800000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175010651}
   lengthInSec: 5
   startDelay: 0
@@ -2383,7 +2428,7 @@ SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 21200002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175010651}
   m_Enabled: 1
   m_CastShadows: 0
@@ -2402,48 +2447,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 9a54d452886c545a69742d1134dcf533, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &175010656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
-    type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
-  m_GameObject: {fileID: 175010651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f44e93657d0b24b96a99348ac4285de7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  isEnemyShot: 0
---- !u!61 &175010657
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
-    type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
-  m_GameObject: {fileID: 175010651}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
---- !u!50 &175010658
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
-    type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
-  m_GameObject: {fileID: 175010651}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!1 &179556167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,6 +2618,49 @@ Transform:
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &411473541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+  m_PrefabInternal: {fileID: 165823729}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 411473543}
+  - 114: {fileID: 411473542}
+  m_Layer: 0
+  m_Name: Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &411473542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb,
+    type: 2}
+  m_PrefabInternal: {fileID: 165823729}
+  m_GameObject: {fileID: 411473541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be32214358094c85b02d8083c13b65b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableName: Time
+  xStart: 590
+  yStart: 10
+  Timer: 0
+--- !u!4 &411473543
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: ae497a4a3903d45cfb1404e46a5f2bcb, type: 2}
+  m_PrefabInternal: {fileID: 165823729}
+  m_GameObject: {fileID: 411473541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 610874930}
 --- !u!1 &423190483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,6 +2721,7 @@ GameObject:
   - 114: {fileID: 469447662}
   - 114: {fileID: 469447666}
   - 114: {fileID: 469447665}
+  - 114: {fileID: 469447667}
   m_Layer: 13
   m_Name: Enemies
   m_TagString: Untagged
@@ -2713,7 +2760,7 @@ MonoBehaviour:
     SpawnWaveNumber: 0
     MinToSpawn: 7
     MaxToSpawn: 17
-    WaveDelaySeconds: 1
+    WaveDelaySeconds: 3.79999995
     TimeToSpawnWholeWave: 3
     prefabToSpawn: {fileID: 400000, guid: 0944de81052264387a39a3c2392f3e72, type: 2}
     spawnSource: 0
@@ -2966,6 +3013,21 @@ MonoBehaviour:
   vector3Arrays: []
   transformArrays: []
   paths: []
+--- !u!114 &469447667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469447660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d181a9282682f40ade2122b77ef4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeSeconds: 50
+  StartTimerOnSpawn: 1
+  logoTexture: {fileID: 0}
+  listener: {fileID: 0}
 --- !u!1 &610874929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1956680778}
+  - {fileID: 411473543}
   - {fileID: 214262046}
   - {fileID: 985423151}
   - {fileID: 1575109403}
@@ -3105,7 +3168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
       propertyPath: deathPrefabSettingsExpanded
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
       propertyPath: ExplosionPrefab
@@ -3129,11 +3192,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
       propertyPath: damagePrefabExpanded
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
       propertyPath: despawnStatModifiersExpanded
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
       propertyPath: m_Enabled
@@ -3143,11 +3206,105 @@ Prefab:
       propertyPath: despawnWhenOffscreen
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
+      propertyPath: enableLogging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
+      propertyPath: deathPrefabSpecific
+      value: 
+      objectReference: {fileID: 400000, guid: 8e4b4c85cbd7847c2a87c7a9c78649bb, type: 2}
+    - target: {fileID: 11400006, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
+      propertyPath: HitPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8427089f458cf4f71921e2f4bf39be49, type: 2}
   m_RootGameObject: {fileID: 790891243}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &644761962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 0ea6124889a364f4593d4f5736f77143, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 644761963}
+  - 114: {fileID: 644761966}
+  - 212: {fileID: 644761965}
+  - 61: {fileID: 644761964}
+  m_Layer: 0
+  m_Name: TwinCannon1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644761963
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 0ea6124889a364f4593d4f5736f77143, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644761962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.68568182, y: 2.49000001, z: 0}
+  m_LocalScale: {x: .252847999, y: .252847999, z: 1}
+  m_Children: []
+  m_Father: {fileID: 725159769}
+--- !u!61 &644761964
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644761962}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 6.46999979, y: 3.0999999}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &644761965
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 0ea6124889a364f4593d4f5736f77143,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644761962}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: bbbe340798352459386a0059f0d14360, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &644761966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 0ea6124889a364f4593d4f5736f77143,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644761962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ea7579566214ecc91bb2714fd90660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 400000, guid: d7359a17507964f7e8d52e7a129e5b77, type: 2}
+  shootingRate: .25
 --- !u!1 &660826435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3435,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 725159769}
@@ -3291,7 +3448,6 @@ GameObject:
   - 114: {fileID: 725159777}
   - 114: {fileID: 725159774}
   - 114: {fileID: 725159778}
-  - 114: {fileID: 725159780}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -3303,20 +3459,23 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.23000002, y: 1.58290815, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 175010652}
+  - {fileID: 644761963}
+  - {fileID: 1303797926}
+  - {fileID: 1408991033}
   m_Father: {fileID: 816143701}
 --- !u!212 &725159770
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 21200000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_CastShadows: 0
@@ -3340,7 +3499,7 @@ BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6100000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_Material: {fileID: 0}
@@ -3352,7 +3511,7 @@ Rigidbody2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5000002, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Mass: 1
   m_LinearDrag: 0
@@ -3368,18 +3527,19 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5952008deec3645008e33b486af12939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 10, y: 10}
+  speed: {x: 20, y: 20}
 --- !u!114 &725159774
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400008, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
@@ -3395,7 +3555,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400006, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3403,13 +3563,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 400000, guid: d7359a17507964f7e8d52e7a129e5b77, type: 2}
-  shootingRate: .00999999978
+  shootingRate: .0250000004
 --- !u!114 &725159776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
     type: 2}
-  m_PrefabInternal: {fileID: 1206822553}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3417,14 +3577,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBehavior: 1
-  HitPoints: 20
+  HitPoints: 50
   AttackPoints: 1
   ExplosionPrefab: {fileID: 400002, guid: 4d9016e9c64e848f0becf25499acbcd3, type: 2}
   listener: {fileID: 725159777}
-  enableLogging: 1
+  enableLogging: 0
   filtersExpanded: 1
   useLayerFilter: 1
-  useTagFilter: 0
+  useTagFilter: 1
   showVisibilitySettings: 0
   despawnWhenOffscreen: 0
   despawnOnClick: 0
@@ -3432,8 +3592,10 @@ MonoBehaviour:
   despawnIfNotVisibleForTime: 5
   ignoreOffscreenHits: 0
   matchingTags:
+  - HealthPowerUp1
   - Enemy
-  matchingLayers: 0a0000000c0000000f00000010000000
+  - WeaponPowerUp1
+  matchingLayers: 0a0000000b000000
   despawnMode: 0
   despawnStatModifiersExpanded: 1
   playerStatDespawnModifiers:
@@ -3473,7 +3635,8 @@ MonoBehaviour:
 --- !u!114 &725159777
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400010, guid: 4621d4d6fcf0543c084e1e0a2c44ad50,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
@@ -3490,985 +3653,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 725159768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e470fb4bbb4f34b40a362b16f25917a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 74767f62eb4f84efaaa874ad31d86fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMode: 2
-  activeItemCriteria:
-    statMods:
-    - statName: Health
-      modValueMin: 0
-      modValueMax: 0
-  hideUnusedEvents: 1
-  gameOverBehavior: 1
-  wavePauseBehavior: 1
-  eventSourceType: 1
-  transmitEventsToChildren: 1
-  listener: {fileID: 725159780}
-  enableWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  disableWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  visibleWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  invisibleWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  mouseOverWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  mouseClickWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  collisionWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  triggerEnterWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  triggerExitWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  spawnedWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  despawnedWave:
-    isExpanded: 1
-    enableWave: 1
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  codeTriggeredWave1:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  codeTriggeredWave2:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  clickWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  collision2dWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  triggerEnter2dWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
-  triggerExit2dWave:
-    isExpanded: 1
-    enableWave: 0
-    NumberToSpawn: 1
-    WaveDelaySeconds: 0
-    TimeToSpawnWholeWave: 0
-    prefabToSpawn: {fileID: 0}
-    spawnSource: 0
-    prefabPoolIndex: 0
-    prefabPoolName: 
-    enableRepeatWave: 0
-    curWaveRepeatMode: 1
-    repeatWavePauseTime: -1
-    maxRepeats: 2
-    repeatItemIncrease: 0
-    repeatItemLimit: 100
-    repeatTimeIncrease: 0
-    repeatTimeLimit: 100
-    repeatPassCriteria:
-      scenarioName: CONDITION_NAME
-      statMods: []
-    willDespawnOnEvent: 0
-    useLayerFilter: 0
-    useTagFilter: 0
-    matchingTags:
-    - Untagged
-    matchingLayers: 00000000
-    enableRandomizations: 0
-    randomXRotation: 0
-    randomYRotation: 0
-    randomZRotation: 0
-    randomDistanceX: 0
-    randomDistanceY: 0
-    randomDistanceZ: 0
-    randomXRotationMin: 0
-    randomXRotationMax: 360
-    randomYRotationMin: 0
-    randomYRotationMax: 360
-    randomZRotationMin: 0
-    randomZRotationMax: 360
-    enableIncrements: 0
-    incrementPosX: 0
-    incrementPosY: 0
-    incrementPosZ: 0
-    incrementRotationX: 0
-    incrementRotationY: 0
-    incrementRotationZ: 0
-    enablePostSpawnNudge: 0
-    postSpawnNudgeForward: 0
-    postSpawnNudgeRight: 0
-    postSpawnNudgeDown: 0
-    retriggerLimitMode: 0
-    limitPerXFrames: 1
-    limitPerXSeconds: .100000001
-    triggeredLastFrame: -200
-    triggeredLastTime: -100
---- !u!114 &725159780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 725159768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43dd2d3a73316d24c932d735b7a41105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceSpawnerName: Lives
+  IncreasedDamage: 0
+  collectSound: {fileID: 0}
+  MAX_ATTACK_POINTS: 0
+  upgradeTime: 0
+  WeaponPosition: {fileID: 0}
+  Weapon: {fileID: 0}
 --- !u!1 &759724781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,11 +3913,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBehavior: 1
-  HitPoints: 250
+  HitPoints: 100
   AttackPoints: 5
   ExplosionPrefab: {fileID: 400002, guid: 4d9016e9c64e848f0becf25499acbcd3, type: 2}
   listener: {fileID: 0}
-  enableLogging: 1
+  enableLogging: 0
   filtersExpanded: 1
   useLayerFilter: 1
   useTagFilter: 1
@@ -4738,12 +3931,12 @@ MonoBehaviour:
   - Bullet
   matchingLayers: 09000000
   despawnMode: 0
-  despawnStatModifiersExpanded: 0
+  despawnStatModifiersExpanded: 1
   playerStatDespawnModifiers:
     scenarioName: CONDITION_NAME
     statMods: []
   alternateModifiers: []
-  damagePrefabExpanded: 0
+  damagePrefabExpanded: 1
   damagePrefabSource: 1
   damagePrefabPoolIndex: 0
   damagePrefabPoolName: 
@@ -4757,8 +3950,8 @@ MonoBehaviour:
   deathPrefabSource: 0
   deathPrefabPoolIndex: 0
   deathPrefabPoolName: 
-  deathPrefabSettingsExpanded: 0
-  deathPrefabSpecific: {fileID: 0}
+  deathPrefabSettingsExpanded: 1
+  deathPrefabSpecific: {fileID: 400000, guid: 8e4b4c85cbd7847c2a87c7a9c78649bb, type: 2}
   deathPrefabSpawnPercentage: 100
   deathPrefabQuantity: 1
   rotationMode: 2
@@ -5828,6 +5021,62 @@ MonoBehaviour:
   direction: {x: 1, y: 0}
   isLinkedToCamera: 1
   isLooping: 0
+--- !u!1 &972500760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 972500761}
+  - 114: {fileID: 972500762}
+  m_Layer: 0
+  m_Name: Powerups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972500761
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972500760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1092399830}
+--- !u!114 &972500762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972500760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61723de128da968409ed0ecc71de427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logoTexture: {fileID: 2800000, guid: ef6d667926efee84f9516c7edb836769, type: 3}
+  isExpanded: 1
+  exhaustiveList: 1
+  dispersalMode: 0
+  listener: {fileID: 0}
+  poolItems:
+  - prefabToSpawn: {fileID: 400000, guid: 8e4b4c85cbd7847c2a87c7a9c78649bb, type: 2}
+    activeMode: 0
+    activeItemCriteria:
+      statMods: []
+    weight: 23
+    isExpanded: 1
+  - prefabToSpawn: {fileID: 400000, guid: b5d4da5e64b6d4e01b64136a9885b592, type: 2}
+    activeMode: 0
+    activeItemCriteria:
+      statMods: []
+    weight: 2
+    isExpanded: 1
 --- !u!1 &985423149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6072,6 +5321,34 @@ Prefab:
       propertyPath: easeTypes.Array.data[0]
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: waveSpecs.Array.data[0].WaveDelaySeconds
+      value: 3.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: newSpawnerName
+      value: PlayerWeaponOrbiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: newSpawnerType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: createSpawnersExpanded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: gameStatsExpanded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
+      propertyPath: createPrefabPoolsExpanded
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400016, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
     - {fileID: 11400014, guid: c279909b5d840094ab2f3b54a72efa4c, type: 2}
@@ -6104,7 +5381,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 972500761}
   m_Father: {fileID: 54166798}
 --- !u!114 &1092399831
 MonoBehaviour:
@@ -6214,132 +5492,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe1001db352cf449bb57900064c597d4, type: 2}
   m_RootGameObject: {fileID: 1897328865}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1001 &1206822553
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 816143701}
-    m_Modifications:
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: matchingLayers.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: alternateModifiers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: alternateModifiers.Array.data[0].statMods.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.23000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.58290815
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: alternateModifiers.Array.data[0].scenarioName
-      value: takingDamage
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: enableLogging
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: damagePrefabSpawnMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Size.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Size.y
-      value: 2.04999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: showVisibilitySettings
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: deathPrefabSettingsExpanded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: listener
-      value: 
-      objectReference: {fileID: 725159777}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: useTagFilter
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: filtersExpanded
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: damagePrefabExpanded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: despawnStatModifiersExpanded
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: alternateModifiers.Array.data[0].statMods.Array.data[0].statName
-      value: Current HP
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: alternateModifiers.Array.data[0].statMods.Array.data[0].modValue
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: matchingLayers.Array.data[1]
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: matchingLayers.Array.data[2]
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-      propertyPath: matchingLayers.Array.data[3]
-      value: 16
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-  m_ParentPrefab: {fileID: 100100000, guid: 4621d4d6fcf0543c084e1e0a2c44ad50, type: 2}
-  m_RootGameObject: {fileID: 725159768}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &1206884888
@@ -7442,6 +6594,127 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 03f232377b8a8402eb0167519a0de78e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1303797925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 282e31e0da6834d6891ea4f05fbc603d, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1303797926}
+  - 114: {fileID: 1303797929}
+  - 212: {fileID: 1303797927}
+  - 50: {fileID: 1303797928}
+  - 61: {fileID: 1303797930}
+  m_Layer: 0
+  m_Name: TwinCannon2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1303797926
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 282e31e0da6834d6891ea4f05fbc603d, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303797925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6856823, y: -1.96787381, z: 0}
+  m_LocalScale: {x: .252848148, y: .252848089, z: 1}
+  m_Children: []
+  m_Father: {fileID: 725159769}
+--- !u!212 &1303797927
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 282e31e0da6834d6891ea4f05fbc603d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303797925}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: bbbe340798352459386a0059f0d14360, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!50 &1303797928
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 282e31e0da6834d6891ea4f05fbc603d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303797925}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!114 &1303797929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 282e31e0da6834d6891ea4f05fbc603d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303797925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ea7579566214ecc91bb2714fd90660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 400000, guid: d7359a17507964f7e8d52e7a129e5b77, type: 2}
+  shootingRate: .25
+--- !u!61 &1303797930
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303797925}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 6.46999979, y: 3.0999999}
+  m_Center: {x: -1.90734863e-06, y: 1.1920929e-07}
+--- !u!1 &1408991032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1408991033}
+  m_Layer: 0
+  m_Name: WeaponBay1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1408991033
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408991032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.69341516, y: 1.6856606, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 725159769}
 --- !u!1 &1442436993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,6 +7054,7 @@ Transform:
   - {fileID: 423190484}
   - {fileID: 1009172308}
   - {fileID: 1739448197}
+  - {fileID: 1937914833}
   m_Father: {fileID: 54166798}
 --- !u!114 &1638813047
 MonoBehaviour:
@@ -7941,6 +7215,52 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 649d8f255429642b889b3f60b7e36111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1937914832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1937914833}
+  - 114: {fileID: 1937914834}
+  m_Layer: 0
+  m_Name: Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937914833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937914832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1638813046}
+--- !u!114 &1937914834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937914832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f3611b309e62747b906d3d69945b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  allowNegative: 0
+  startingValue: 0
+  canEndGame: 0
+  endGameMinValue: 0
+  endGameMaxValue: 0
+  persistanceMode: 0
+  listenerPrefab: {fileID: 411473542}
 --- !u!1 &1956680776
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class KillableListenerSubclass : KillableListener {
 		
 		// your code here.
 		Killable killable = gameObject.GetComponent<Killable> ();
-		Debug.Log ("you got hit and it took " + pointsDamage + " away from your total. You now have " + killable.currentHitPoints + " available");
+		// Debug.Log ("you got hit and it took " + pointsDamage + " away from your total. You now have " + killable.currentHitPoints + " available");
 
 	}
 

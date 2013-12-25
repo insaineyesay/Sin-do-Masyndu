@@ -100,7 +100,7 @@ MonoBehaviour:
   AttackPoints: 1
   ExplosionPrefab: {fileID: 0}
   listener: {fileID: 0}
-  enableLogging: 1
+  enableLogging: 0
   filtersExpanded: 1
   useLayerFilter: 1
   useTagFilter: 0

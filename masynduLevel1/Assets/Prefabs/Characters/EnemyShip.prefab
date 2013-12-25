@@ -1191,7 +1191,7 @@ MonoBehaviour:
   AttackPoints: 5
   ExplosionPrefab: {fileID: 0}
   listener: {fileID: 0}
-  enableLogging: 1
+  enableLogging: 0
   filtersExpanded: 0
   useLayerFilter: 1
   useTagFilter: 1

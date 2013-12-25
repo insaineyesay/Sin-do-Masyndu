@@ -14,6 +14,11 @@ TagManager:
   - HealthBar
   - entity
   - currentHP
+  - HealthPowerUp1
+  - WeaponPowerUp
+  - TwinCannons1
+  - 
+  - WeaponPowerUp1
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
