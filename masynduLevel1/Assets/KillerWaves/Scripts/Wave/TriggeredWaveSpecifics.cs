@@ -39,7 +39,7 @@ public class TriggeredWaveSpecifics {
 	public float randomDistanceX = 0f;
 	public float randomDistanceY = 0f;
 	public float randomDistanceZ = 0f;
-	public float randomXRotationMin = 0f;
+	public float randomXRotationMin = -360f;
 	public float randomXRotationMax = 360f;
 	public float randomYRotationMin = 0f;
 	public float randomYRotationMax = 360f;

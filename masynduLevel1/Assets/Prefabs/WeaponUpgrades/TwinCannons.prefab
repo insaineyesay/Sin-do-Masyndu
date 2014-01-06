@@ -46,9 +46,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 50: {fileID: 5000004}
-  - 114: {fileID: 11400008}
-  - 114: {fileID: 11400010}
-  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: TwinCannons
   m_TagString: TwinCannons1
@@ -247,44 +244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 400000, guid: d7359a17507964f7e8d52e7a129e5b77, type: 2}
   shootingRate: .0250000004
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca784eb4cdc764619a8dca3f70fcf05d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11400010
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1d181a9282682f40ade2122b77ef4f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LifeSeconds: 10
-  StartTimerOnSpawn: 1
-  logoTexture: {fileID: 0}
-  listener: {fileID: 11400012}
---- !u!114 &11400012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba3b9c35c1bd65438aa65556aa94f31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sourceDespawnerName: TwinCannons
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
