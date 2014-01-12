@@ -19,6 +19,7 @@ TagManager:
   - TwinCannons1
   - WeaponBay
   - WeaponPowerUp1
+  - cannon
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -2602,6 +2602,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610874930}
+--- !u!1001 &265313640
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 725159769}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.30999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.9000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+      propertyPath: m_Name
+      value: WeaponBays
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
+  m_RootGameObject: {fileID: 1042202616}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &283944832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,50 +3157,6 @@ MonoBehaviour:
   StartTimerOnSpawn: 1
   logoTexture: {fileID: 0}
   listener: {fileID: 0}
---- !u!1001 &608293007
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 725159769}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.30999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.9000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-      propertyPath: m_Name
-      value: WeaponBays
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-  m_RootGameObject: {fileID: 1042202616}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &610874929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,7 +3702,7 @@ MonoBehaviour:
   filtersExpanded: 1
   useLayerFilter: 1
   useTagFilter: 1
-  showVisibilitySettings: 1
+  showVisibilitySettings: 0
   despawnWhenOffscreen: 0
   despawnOnClick: 0
   despawnIfNotVisible: 0
@@ -3721,7 +3721,7 @@ MonoBehaviour:
     - statName: Lives
       modValue: -1
   alternateModifiers: []
-  damagePrefabExpanded: 1
+  damagePrefabExpanded: 0
   damagePrefabSource: 1
   damagePrefabPoolIndex: 0
   damagePrefabPoolName: 
@@ -3778,7 +3778,7 @@ MonoBehaviour:
   MAX_ATTACK_POINTS: 10
   upgradeTime: 10
   WeaponPosition: {fileID: 1042202617}
-  Weapon: {fileID: 5000004, guid: be2873069e4984cb4accad86de3d8851, type: 2}
+  Weapon: {fileID: 100004, guid: be2873069e4984cb4accad86de3d8851, type: 2}
 --- !u!1 &759724781
 GameObject:
   m_ObjectHideFlags: 0
@@ -5392,7 +5392,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-  m_PrefabInternal: {fileID: 608293007}
+  m_PrefabInternal: {fileID: 265313640}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1042202617}
@@ -5407,7 +5407,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: bb34cbfbbb79742a0900a92b04f88de1, type: 2}
-  m_PrefabInternal: {fileID: 608293007}
+  m_PrefabInternal: {fileID: 265313640}
   m_GameObject: {fileID: 1042202616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.30999994, y: 2.9000001, z: 0}

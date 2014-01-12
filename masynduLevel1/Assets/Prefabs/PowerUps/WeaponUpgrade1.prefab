@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   m_Layer: 11
   m_Name: WeaponUpgrade1
   m_TagString: WeaponPowerUp1
@@ -41,23 +40,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f743671c1eac34df1bcbdd9eb28de929, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IncreasedDamage: 10
-  collectSound: {fileID: 0}
-  MAX_ATTACK_POINTS: 10
-  upgradeTime: 10
-  WeaponPosition: {fileID: 0}
-  Weapon: {fileID: 5000004, guid: be2873069e4984cb4accad86de3d8851, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,7 +80,7 @@ MonoBehaviour:
     - Untagged
     matchingLayers: 00000000
   triggerEnterSpec:
-    eventEnabled: 1
+    eventEnabled: 0
     useLayerFilter: 1
     useTagFilter: 1
     matchingTags:
@@ -112,19 +94,19 @@ MonoBehaviour:
     - Untagged
     matchingLayers: 00000000
   collision2dSpec:
-    eventEnabled: 1
+    eventEnabled: 0
     useLayerFilter: 1
     useTagFilter: 0
     matchingTags:
     - Untagged
     matchingLayers: 09000000
   triggerEnter2dSpec:
-    eventEnabled: 0
-    useLayerFilter: 0
-    useTagFilter: 0
+    eventEnabled: 1
+    useLayerFilter: 1
+    useTagFilter: 1
     matchingTags:
-    - Untagged
-    matchingLayers: 00000000
+    - Player
+    matchingLayers: 09000000
   triggerExit2dSpec:
     eventEnabled: 0
     useLayerFilter: 0
